@@ -1,0 +1,999 @@
+
+/*--
+-------------------
+ BASE STYLES
+-------------------
+ ---*/
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #3F3F3F;
+	margin: 0;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+
+}
+
+section {
+	margin: 1.5rem 0rem;
+}
+
+
+h1 {
+	font-size: 1.95rem;
+}
+
+h2 {
+	margin: 1rem 0rem 2.5rem;
+ 	padding: 2.5rem 1.5rem 0rem;
+ 	text-align: center;
+}
+
+h2  {
+	font-size: 1.56rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+h4 {
+
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Domine', sans-serif;
+	font-weight: 700;
+}
+
+p,
+.btn {
+	font-size: 1rem;
+}
+
+a,
+a:hover  {
+	text-decoration: none;
+}
+
+
+/*.icon,
+.icon-wrapper p {
+	border: 1px red solid;
+}
+*/
+
+.body-wrapper {
+	padding: 1.5rem 10% 0px 10%;
+	background-color: #F9F9F9;
+	/*margin: 3.5rem auto 3.5rem;*/
+}
+
+
+
+/*--
+-------------------
+ HEADER STYLES
+-------------------
+ ---*/
+
+ .nav-link {
+ 	margin: 1rem;
+ 	font-size: 1.25rem;
+ 	text-align: center;
+ }
+
+ .nav-button {
+    font-size: 1.25rem;
+ 	margin: 1.5rem auto;
+ 	display: block;
+ }
+
+
+/*--
+-------------------
+ HERO STYLES
+-------------------
+ ---*/
+
+.hero {
+	background-image: url("../img/hero_filler.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 80vh;
+	margin-bottom: 0rem;
+	padding-bottom: 1.5rem;
+	position: relative;
+}
+
+.hero-content {
+	position: absolute;
+	background-color: rgba(238, 238, 238, 0.6);
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding-bottom: 1.5rem;
+}
+
+
+.hero h1 {
+	padding:4rem 0rem 4rem;
+	margin: auto;
+}
+
+.hero p {
+	font-size: 1.25rem;
+	padding:1rem 0rem;
+	margin: auto;
+}
+
+.hero h1,
+.hero p {
+	width: 90%;
+	text-align: center;
+}
+
+.hero button {
+	margin:1rem auto;
+	align-items: center;
+	display: block;
+	font-size: 1.25rem;
+
+}
+
+/*--
+-------------------
+ BOOKING MODAL STYLES
+-------------------
+ ---*/
+
+ .modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 4rem;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4);
+  animation-name: animate-modal;
+  animation-duration: 0.6s;
+}
+
+@keyframes animate-modal {
+  from {opacity:0}
+  to {opacity: 1}
+}
+
+.close {
+  width: 90%;
+  margin: auto;
+  color: #333;
+  float: left;
+  font-size: 2.4rem;
+  font-weight: bold;
+ }
+
+.close:hover {
+  color: rgba(204, 204, 0, .8);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  width: 90%;
+  margin: auto;
+  background-color: #F9F9F9;
+  padding: .5rem;
+  box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.75);
+  max-height: calc(100vh - 5rem);
+  overflow-y: auto;
+ }
+
+.modal-title,
+.modal-title-two {
+  text-decoration: none;
+  margin-top: 0px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+ }
+
+
+.modal-text {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.modalcont {
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+.booking-htwo {
+	margin-top: 3rem;
+	margin-bottom: .5rem;
+}
+
+
+.amet-hthree{
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+
+
+
+.modal-text h3:first-child {
+	margin-top: 0rem;	
+}
+
+
+
+/*--
+-------------------
+ ABOUT STYLES
+-------------------
+ ---*/
+
+
+ .amenities h2{
+ 	margin-top: 2rem;
+ 	margin-bottom: 1rem;
+ }
+
+ .ab-main-p {
+ 	margin: 1rem 0rem 2rem;
+ }
+
+
+
+.abimg {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+ .abimg-two {
+ 	display: none;
+ }
+
+ .icon-flex {
+ 	width: 90%;
+ 	margin: auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+
+ }
+
+.icon-flex>div {
+	flex: 1 0 33%;
+	text-align: center;
+	margin: 1rem 0rem;
+}
+
+.icon-flex>div:first-child,
+.icon-flex>div:nth-child(2) {
+	flex: 0 1 50%;
+}
+
+.icon {
+	max-width: 80px;
+	max-height: 80px;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.icon path,
+.icon circle {
+	stroke-width: 1.5;
+}
+
+ .icon-flex p {
+ 	font-size: 1rem;
+ 	line-height: 1.1rem;
+ 	text-align: center;
+ 	margin-bottom: 0rem;
+ }
+
+
+ .am-btn {
+	margin:0rem auto 1rem;
+
+	align-items: center;
+	display: block;
+ }
+
+
+
+
+
+
+
+
+/*--
+-------------------
+ Gallery STYLES
+-------------------
+ ---*/
+
+.gallery {
+	margin-top: 3rem;
+	margin-bottom: .5rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.image-flex {
+	width: 48%;
+	margin: 2px 2px;
+}
+
+
+.gimg img {
+	max-height: auto;
+	max-width: 100%;
+}
+
+
+.gmobile {
+	display: none;
+}
+
+ #gallery button {
+	margin:1rem auto;
+	align-items: center;
+	display: block;
+ }
+
+
+
+/*--
+-------------------
+ LA STYLES
+-------------------
+ ---*/
+
+.area-title {
+	margin-bottom: 2.5rem;
+}
+
+.area-top {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	overflow: visible;
+
+}
+
+.area-top h3 {
+	flex:2;
+}
+
+.area-top svg {
+	flex: 1;
+	overflow: visible;
+}
+
+.area-svg {
+ 		max-width: 120px;
+ 	}
+
+.area-svg path,
+.area-svg circle {
+	stroke-width: 1;
+}
+
+.area-para {
+	margin-bottom: 2.5rem;
+}
+
+
+
+
+/*--
+-------------------
+ CONTACT STYLES
+-------------------
+ ---*/
+
+ .contact {
+	margin-bottom: 0rem;
+	padding-bottom: 1.5rem;
+}
+
+ .contact h2 {
+ 	margin-bottom: 2.5rem;
+ }
+
+ .contact p {
+ 	font-size: 1rem;
+ }
+
+ .details,
+ .address {
+ 	margin: auto;
+ 	margin-bottom: 2.5rem;
+ 	text-align: center;
+ }
+
+
+ .details p {
+ 	margin-bottom: 0.5rem;
+ }
+
+
+ .cpmodibe {
+ 	margin-bottom: 0rem;
+ }
+
+
+
+
+.mapouter {
+	position:relative;
+	text-align:center;
+	height:350px;
+	width:100%;
+}
+
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:auto;
+	width:100%;
+	margin: auto;
+}
+
+
+/*--
+-------------------
+ FOOTER STYLES
+-------------------
+ ---*/
+
+footer {
+	padding: .5rem 0rem;
+}
+
+.ftext {
+	font-size: 0.8rem;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+}
+
+
+
+
+
+
+/*--
+-------------------
+ MEDIA QUERIES 
+-------------------
+ ---*/
+
+ @media (min-width: 600px) {
+
+/*--
+-------------------
+HERO STYLES
+-------------------
+ ---*/
+
+.hero h1 {
+	padding-top: 7rem;
+	padding-bottom: 2rem;
+}
+
+
+
+ 	/*--
+-------------------
+ ABOUT STYLES
+-------------------
+ ---*/
+
+ 
+
+	.icon-flex {
+		width: 100%;
+		/*max-width: 550px;
+		max-height: 260px;*/
+		margin-bottom: 1rem;
+	}
+
+	
+
+	.icon-flex>div,
+	.icon-flex>div:first-child,
+	.icon-flex>div:nth-child(2) {
+		flex: 1 0 25%;
+		margin: .5rem 0rem;
+	}
+
+/*--
+-------------------
+ LA STYLES
+-------------------
+ ---*/
+
+ 	.area-svg {
+ 		max-width: 120px;
+ 	}
+
+ /*--
+-------------------
+ CONTACT STYLES
+-------------------
+ ---*/
+
+
+ 	.contact-container {
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: space-around;
+ 	}
+
+ 	.details,
+ 	.address {
+ 		flex: 1;
+ 		width: 50%;
+ 		margin-top: 0rem;
+ 		text-align: center;
+ 	}
+
+
+ 	.gmap_canvas iframe {
+ 		width
+ 	}
+
+
+
+ }
+
+@media (min-width: 768px) {
+
+/*--
+-------------------
+ Layout STYLES
+-------------------
+ ---*/
+
+
+ .body-wrapper {
+	padding: 0px 10% 0px 10%;
+	/*margin: 3.5rem auto 3.5rem;*/
+  }
+
+
+
+/*--
+-------------------
+Hero STYLES
+-------------------
+ ---*/
+
+
+/*.hero{
+	min-height: 50vh;
+	margin-bottom: 0rem;
+
+}*/
+
+/*--
+-------------------
+ Modal STYLES
+-------------------
+ ---*/
+
+
+/* .modal-container {
+    padding-top: 45px
+    width: 50vw;
+  }*/
+
+
+.modal-content {
+	width: 70%;
+}
+
+
+/*--
+-------------------
+ ABOUT STYLES
+-------------------
+ ---*/
+
+ 	.about {
+ 		display: flex;
+ 		flex-direction: row;
+ 		flex-wrap: wrap;
+ 		justify-content: space-between;
+ 	}
+
+ 	.about h2 {
+ 		text-align: left;
+ 	}
+
+ 	.abtitle {
+ 		padding-left: 0rem;
+ 	}
+
+ 	.about>div{
+ 		flex: 1 0 50%;
+ 	}
+
+
+
+ 	.amenities h2 {
+ 		margin-bottom: 0rem;
+ 	}
+
+ 	.icon-flex {
+ 		padding-left: 1.5rem;
+ 		margin-bottom: 0rem;
+ 	}
+
+ 	.tv-wrapper {
+ 		display:none;
+ 	}
+
+ 	.icon-wrapper {
+ 		flex: 1 0 25%;
+ 	}
+
+ 	
+ 	.am-btn {
+ 		margin: inherit;
+ 		margin-left: 1.5rem;
+ 		margin-top: 1rem;
+ 		align-items: left;
+ 	}
+
+ 	.abimg {
+ 		margin-top: 5rem;
+ 		width: 40%;
+ 		height: 250px;
+ 	}
+
+ 	.abimg-two {
+ 		display: inherit;
+ 	}
+
+
+
+
+
+	/*--
+	-------------------
+	 Gallery STYLES
+	-------------------
+	 ---*/
+
+	.gallery {
+		justify-content: space-between;
+		margin-top: 3rem;
+	}
+
+	.image-flex {
+		width: 32%;
+		max-height: 200px;
+		margin: .5rem .1rem;
+	}
+
+	/*.gimg {
+		width:30%;
+		height: auto;
+		margin: 1rem 0px;
+	}
+
+*/
+	.gimg img {
+		max-height: 190px;
+		width: 100%;
+	}
+
+	.gmobile {
+		display: inherit;
+	}
+
+
+	/*--
+	-------------------
+	 LA STYLES
+	-------------------
+	 ---*/
+
+	.la-flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 1.5rem 0rem 1.5rem;
+	}
+
+	.area-quad {
+		width: 45%;
+		margin: .5rem 0rem .5rem;
+	}
+
+
+ 	
+}
+
+
+@media (min-width: 830px) {
+	.tv-wrapper {
+ 		display:block;
+ 	}	
+
+}
+
+
+
+@media (min-width: 992px) {
+
+/*--
+	-------------------
+	 NavBar STYLES
+	-------------------
+	 ---*/
+
+
+.nav-link {
+ 	margin: 0rem .5rem;
+ 	font-size: 1rem;
+ 	text-align: inherit;
+ }
+
+ .nav-button {
+    font-size: 1rem;
+ 	margin: 0rem 0rem  0rem .5rem;
+ 	display: inherit;
+ }
+
+
+/*--
+	-------------------
+	 About STYLES
+	-------------------
+	 ---*/
+
+	 .about {
+	 	margin-top: 0rem;
+	 	margin-bottom: 6.5rem;
+	 	padding-top: 3rem;
+	 }
+
+
+	.abimg-one img {
+		margin-left: 2rem;
+	}
+
+	.abimg-two img {
+		width: 95%;
+		height: auto;
+	}
+
+/*--
+	-------------------
+	 LA STYLES
+	-------------------
+	 ---*/
+
+	 .area {
+	 	margin-top: 5rem;
+	 }
+
+
+
+}
+
+
+
+  @media (min-width: 1025px) {
+  
+
+  /*--
+	-------------------
+	Nasbar STYLES
+	-------------------
+	 ---*/
+
+	 #nav {
+	 	padding-left: 10%;
+	 	padding-right: 10%;
+	 }
+ 
+
+  /*--
+	-------------------
+	 HERO STYLES
+	-------------------
+	 ---*/
+
+	.hero {
+		min-height: 60vh;
+		position: relative;
+	}
+
+	/*.hero-content {
+		 position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+	}*/
+
+	.hero p {
+		max-width: 50%
+	}
+
+
+
+	/*--
+	-------------------
+	 About STYLES
+	-------------------
+	 ---*/
+
+	 .abimg-one {
+	 	margin-top: 2rem;
+	 }
+
+	 .icon-flex {
+	 	padding-left: .5rem;
+	 }
+
+
+	/*--
+	-------------------
+	 Modal STYLES
+	-------------------
+	 ---*/
+
+
+
+	   .modal-container {
+	      padding-top: 60px
+	    }
+
+
+	   .modal-content {
+		width: 50%;
+		}
+
+
+	/*--
+	-------------------
+	 Gallery STYLES
+	-------------------
+	 ---*/
+
+	/*.gallery {
+		width: 90%;
+	}*/
+
+	/*.gimg img {
+		max-height: 190px;
+	}
+*/
+
+
+
+	/*--
+	-------------------
+	 LA STYLES
+	-------------------
+	 ---*/
+
+/*	 .area {
+	 	height: 90vh;
+	 	display: flex;
+	 	flex-direction: column;
+	 }
+
+	 .la-flex {
+	 	margin-top: 3rem;
+	 }
+
+	 .area-quad {
+	 	margin-bottom: 2rem;
+	 }
+*/
+
+  /*--
+	-------------------
+	 CONTACT STYLES
+	-------------------
+	 ---*/
+
+/*	 .contact {
+	 	height: 70vh;
+	 }*/
+
+
+	 .con-flex {
+	 	display: flex;
+	 	flex-direction: row-reverse;
+	 	flex-wrap: wrap;
+	 }
+
+	 .contact-container {
+	 	flex: 1;
+	 	/*width: 33%;*/
+	 	align-items: center;
+	 }
+
+	 .mapouter {
+	 	flex: 1;
+/*	 	width: 64%;
+*/	 }
+	 
+
+ 	
+ }
+
+
+
+
+
+
+
+
+
+ /*--
+-------------------
+ ABOUT STYLES
+-------------------
+ ---*/
+
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
