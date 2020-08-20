@@ -84,15 +84,19 @@ a:hover  {
  ---*/
 
  .nav-link {
- 	margin: 1rem;
+ 	margin: .25rem;
  	font-size: 1.25rem;
  	text-align: center;
  }
 
  .nav-button {
     font-size: 1.25rem;
- 	margin: 1.5rem auto;
+ 	margin: .25rem auto;
  	display: block;
+ }
+
+ .navbar-collapse {
+ 	min-height: 50vh;
  }
 
 
@@ -107,7 +111,7 @@ a:hover  {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 80vh;
+	min-height: 500px;
 	margin-bottom: 0rem;
 	padding-bottom: 1.5rem;
 	position: relative;
@@ -198,6 +202,10 @@ a:hover  {
   overflow-y: auto;
  }
 
+.modal-title{
+	padding-top: 0rem;
+}
+
 .modal-title,
 .modal-title-two {
   text-decoration: none;
@@ -206,9 +214,15 @@ a:hover  {
   margin-bottom: 1.5rem;
  }
 
+.avaliability-p{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+
 
 .modal-text {
-  width: 90%;
+  width: 80%;
   margin: auto;
   margin-top: 1rem;
 }
@@ -235,6 +249,19 @@ a:hover  {
 .modal-text h3:first-child {
 	margin-top: 0rem;	
 }
+
+
+/*-- Google calendar styles --*/
+
+.view-cap {
+	color: blue;
+}
+
+.view-container-border {
+	color: blue;
+}
+
+
 
 
 
@@ -287,11 +314,23 @@ a:hover  {
 	flex: 0 1 50%;
 }
 
+.icon-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
 .icon {
 	max-width: 80px;
 	max-height: 80px;
 	margin-left: auto;
 	margin-right:auto;
+	display: block;
+}
+
+.icon svg {
+	width: 100%;
 }
 
 .icon path,
@@ -358,6 +397,17 @@ a:hover  {
 	display: block;
  }
 
+
+/*--
+-------------------
+Lightbox STYLES
+-------------------
+ ---*/
+
+ .lb-outerContainer,
+ .lightbox .lb-image {
+ 	max-height: 85vh!important;
+ }
 
 
 /*--
@@ -468,6 +518,28 @@ footer {
 	padding: .5rem 0rem;
 }
 
+.footer-pseudo-flex {
+	display:none;
+}
+
+.social-icon-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin:1rem auto;
+
+}
+
+.social-icon {
+	display:block;
+	width: 160px;
+	height: auto;
+}
+
+.social-icon svg {
+	fill: #3F3F3F;
+}
+
 .ftext {
 	font-size: 0.8rem;
 	text-align: center;
@@ -481,11 +553,28 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
+ /*--
+-------------------
+-------------------
+ ---*/
 /*--
 -------------------
  MEDIA QUERIES 
 -------------------
  ---*/
+ /*--
+-------------------
+-------------------
+ ---*/
+
 
  @media (min-width: 600px) {
 
@@ -584,28 +673,9 @@ HERO STYLES
 
 /*--
 -------------------
-Hero STYLES
--------------------
- ---*/
-
-
-/*.hero{
-	min-height: 50vh;
-	margin-bottom: 0rem;
-
-}*/
-
-/*--
--------------------
  Modal STYLES
 -------------------
  ---*/
-
-
-/* .modal-container {
-    padding-top: 45px
-    width: 50vw;
-  }*/
 
 
 .modal-content {
@@ -632,6 +702,7 @@ Hero STYLES
 
  	.abtitle {
  		padding-left: 0rem;
+ 		margin-bottom: 1rem;
  	}
 
  	.about>div{
@@ -647,10 +718,6 @@ Hero STYLES
  	.icon-flex {
  		padding-left: 1.5rem;
  		margin-bottom: 0rem;
- 	}
-
- 	.tv-wrapper {
- 		display:none;
  	}
 
  	.icon-wrapper {
@@ -671,9 +738,6 @@ Hero STYLES
  		height: 250px;
  	}
 
- 	.abimg-two {
- 		display: inherit;
- 	}
 
 
 
@@ -733,14 +797,54 @@ Hero STYLES
 	}
 
 
+
+	/*--
+	-------------------
+	 FOOTER STYLES
+	-------------------
+	 ---*/
+
+	.footer-flex {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+		position: relative;
+		flex-wrap: nowrap;
+
+	}
+
+	.footer-pseudo-flex {
+		flex: 1;
+		display:block;
+		width:130px;
+		height:auto;
+
+	}
+
+	.social-icon {
+		flex: 1;
+		width: 130px;
+		justify-content: space-around;
+		/*position: absolute;*/
+		/*left: 90%;
+		transform: translateX(-90%);*/
+	}
+
+	.footer-text {
+		flex: 5;
+		margin-top: .8rem;
+		/*position: absolute;
+		left: 50%;
+		transform: translateX(-50%);*/
+	}
  	
 }
 
 
 @media (min-width: 830px) {
-	.tv-wrapper {
- 		display:block;
- 	}	
+	.abimg-two {
+ 		display: inherit;
+ 	}
 
 }
 
@@ -766,6 +870,11 @@ Hero STYLES
  	margin: 0rem 0rem  0rem .5rem;
  	display: inherit;
  }
+
+ .navbar-collapse {
+ 	min-height: inherit;
+ }
+
 
 
 /*--
@@ -819,6 +928,8 @@ Hero STYLES
 	 	padding-left: 10%;
 	 	padding-right: 10%;
 	 }
+
+
  
 
   /*--
@@ -827,17 +938,7 @@ Hero STYLES
 	-------------------
 	 ---*/
 
-	.hero {
-		min-height: 60vh;
-		position: relative;
-	}
 
-	/*.hero-content {
-		 position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-	}*/
 
 	.hero p {
 		max-width: 50%
@@ -941,9 +1042,20 @@ Hero STYLES
 
 	 .mapouter {
 	 	flex: 1;
-/*	 	width: 64%;
-*/	 }
+
+	 }
 	 
+
+	  /*--
+	-------------------
+	 FOOTER STYLES
+	-------------------
+	 ---*/
+
+	 .footer-flex {
+	 	padding-left: 3%;
+	 	padding-right: 3%;
+	 }
 
  	
  }

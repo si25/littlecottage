@@ -41,13 +41,15 @@ $("#nb .nav-item").click(function(event) {
   var amModal = document.getElementById ('amenities-modal');
   var amBtn = document.getElementsByClassName ('am-btn')[0];
 
+  var modalContainer = document.getElementsByClassName ('modal-container');
   var close = document.getElementsByClassName ('close');
   var closeNav = document.getElementsByClassName('nav-link');
   var closeHeader = document.getElementsByClassName('navbar-brand')[0];
 
 
-console.log(modal);
-console.log(btn);
+
+
+console.log(modalContainer);
 
 for(var i = 0; i <btn.length; i++) { 		// Opens booking modal //
   var toCLick = btn[i]; 
@@ -69,6 +71,16 @@ for(var i = 0; i <close.length; i++) { 		// Closes all modals //
   }
 }
 
+for(var i = 0; i < modalContainer.length; i++) {  // Closes all modals when area outside modal is clicked//
+  var clicked = modalContainer[i];
+  clicked.onclick = function() {
+    if (event.target == modal || event.target == amModal){
+        modal.style.display = 'none';
+        amModal.style.display ='none';
+    }
+  }
+}
+
 
 for(var i = 0; i <closeNav.length; i++) {	// Closes all modals on Nav-bar (Fix for bug) //
   var toCLick = closeNav[i]; 
@@ -83,6 +95,8 @@ closeHeader.onclick = function() {
   amModal.style.display = 'none'; 
 
 }
+
+
 
 
 /** Gallery button open **/ 
