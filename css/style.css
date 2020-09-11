@@ -14,6 +14,7 @@ body {
 	color: #3F3F3F;
 	margin: 0;
 	font-size: 16px;
+	background-color: #F9F9F9;
 	-webkit-font-smoothing: antialiased;
 
 }
@@ -55,6 +56,14 @@ h3 {
 p,
 .btn {
 	font-size: 1rem;
+}
+
+a {
+	color: #17a2b8;
+}
+
+a:hover {
+	color: #007C92;
 }
 
 a,
@@ -107,11 +116,11 @@ a:hover  {
  ---*/
 
 .hero {
-	background-image: url("../img/hero_filler.jpg");
+	background-image: url("../img/hero_test_v2_v3.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 600px;
 	margin-bottom: 0rem;
 	padding-bottom: 1.5rem;
 	position: relative;
@@ -119,23 +128,63 @@ a:hover  {
 
 .hero-content {
 	position: absolute;
-	background-color: rgba(238, 238, 238, 0.6);
+	background-color: rgba(51, 51, 51, .4);
 	width: 100%;
 	height: 100%;
 	margin: auto;
-	padding-bottom: 1.5rem;
+	/*padding-bottom: 1.5rem;*/
+	
+ 
+
+  	display: -webkit-box;
+ 	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+ 	 -webkit-box-pack: center;
+ 	 -moz-box-pack: center;
+ 	 -ms-flex-pack: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+
+ 	 -webkit-box-align: center;
+ 	 -moz-box-align: center;
+ 	 -ms-flex-line-pack: center;
+ 	 -webkit-align-content: center;
+ 	 align-content: center;
+
+ 	 	align-items: center;
+  	flex-wrap: wrap;
+	flex-direction: column;
+ 
 }
 
 
 .hero h1 {
-	padding:4rem 0rem 4rem;
-	margin: auto;
+	/*padding:4rem 0rem 4rem;*/
+/*	margin: auto;*/
+	color:#fff;
+	font-weight: 600;
+	padding-bottom: 2rem;
+
+	/*background-color:rgba(255, 255, 255, 0.3) ;*/
+}
+
+.hero-image {
+	height: 150px;
+	width: 150px;
+	margin-bottom: 2rem;
 }
 
 .hero p {
 	font-size: 1.25rem;
-	padding:1rem 0rem;
-	margin: auto;
+/*	margin: auto;*/
+	color:#fff;
+	font-weight: 600;
+	padding-bottom: 2rem;
+/*	background-color:rgba(255, 255, 255, 0.3); */
+
 }
 
 .hero h1,
@@ -144,8 +193,21 @@ a:hover  {
 	text-align: center;
 }
 
+.hero-link {
+	font-size: 1.25rem;
+	color:#fff;
+	font-weight: 600;
+	border-bottom: 2px solid #F9F9F9;
+}
+
+.hero-link:hover {
+	cursor: pointer;
+	color:#fff;
+}
+}
+
 .hero button {
-	margin:1rem auto;
+/*	margin:1rem auto;*/
 	align-items: center;
 	display: block;
 	font-size: 1.25rem;
@@ -187,7 +249,7 @@ a:hover  {
  }
 
 .close:hover {
-  color: rgba(204, 204, 0, .8);
+  color: #007C92;
   text-decoration: none;
   cursor: pointer;
 }
@@ -285,8 +347,21 @@ a:hover  {
 
 .abimg {
 	width: 100%;
+
 	overflow: hidden;
 	margin-bottom: 1rem;
+}
+
+.abimg-one {
+	height: 300px;
+	position: relative;
+}
+
+.abimg-one img {
+	position: absolute;
+	display:block;
+	top: -80px;
+  	left: -210px;
 }
 
  .abimg-two {
@@ -395,6 +470,7 @@ a:hover  {
 	margin:1rem auto;
 	align-items: center;
 	display: block;
+
  }
 
 
@@ -472,6 +548,11 @@ Lightbox STYLES
  	font-size: 1rem;
  }
 
+ .contact-container {
+ 	width: 90%;
+    margin: auto;
+ }
+
  .details,
  .address {
  	margin: auto;
@@ -497,6 +578,8 @@ Lightbox STYLES
 	text-align:center;
 	height:350px;
 	width:100%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 .gmap_canvas {
@@ -516,6 +599,7 @@ Lightbox STYLES
 
 footer {
 	padding: .5rem 0rem;
+	background-color: #eee;
 }
 
 .footer-pseudo-flex {
@@ -585,8 +669,8 @@ HERO STYLES
  ---*/
 
 .hero h1 {
-	padding-top: 7rem;
-	padding-bottom: 2rem;
+	/*padding-top: 7rem;
+	padding-bottom: 2rem;*/
 }
 
 
@@ -596,6 +680,12 @@ HERO STYLES
  ABOUT STYLES
 -------------------
  ---*/
+
+
+ .abimg-one img {
+	top: -70px;
+  	left: 0px;
+}
 
  
 
@@ -682,6 +772,10 @@ HERO STYLES
 	width: 70%;
 }
 
+.calendar {
+	height: 400;
+}
+
 
 /*--
 -------------------
@@ -706,8 +800,10 @@ HERO STYLES
  	}
 
  	.about>div{
- 		flex: 1 0 50%;
+ 		flex: 1 0 45%;
  	}
+
+
 
 
 
@@ -726,17 +822,24 @@ HERO STYLES
 
  	
  	.am-btn {
- 		margin: inherit;
- 		margin-left: 1.5rem;
  		margin-top: 1rem;
- 		align-items: left;
+ 		max-width: 82px;
  	}
 
  	.abimg {
  		margin-top: 5rem;
  		width: 40%;
- 		height: 250px;
  	}
+
+ 	.abimg-one {
+ 		margin-top: 7.6rem;
+ 	}
+
+
+ 	.abimg-one img {
+		top: -140px;
+  		left: -210px;
+	}
 
 
 
@@ -775,6 +878,8 @@ HERO STYLES
 	.gmobile {
 		display: inherit;
 	}
+
+
 
 
 	/*--
@@ -845,6 +950,59 @@ HERO STYLES
 	.abimg-two {
  		display: inherit;
  	}
+
+ 	.abimg-two {
+		position: relative;
+		height: 300px;
+		margin-top: 2rem;
+	}
+
+	.abimg-two img {
+		position: absolute;
+		top: -39px;
+	}
+
+ 	.am-btn {
+ 		margin: inherit;
+ 		margin-left: 1.5rem;
+ 		align-items: left;
+ 	}
+
+ 	.amenities {
+ 		 	display: -webkit-box;
+ 	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+ 	 -webkit-box-pack: center;
+ 	 -moz-box-pack: center;
+ 	 -ms-flex-pack: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+
+ 	 -webkit-box-align: center;
+ 	 -moz-box-align: center;
+ 	 -ms-flex-line-pack: center;
+ 	 -webkit-align-content: center;
+ 	 align-content: center;
+
+ 
+  	flex-wrap: wrap;
+	flex-direction: column;
+ 	}
+
+ 	.amenities h2,
+ 	.icon-flex {
+ 		margin: initial;
+ 		padding: initial;
+ 	}
+
+ 	.amenities button {
+ 		margin-top: 1rem;
+ 	}
+
+
 
 }
 
@@ -927,6 +1085,11 @@ HERO STYLES
 	 #nav {
 	 	padding-left: 10%;
 	 	padding-right: 10%;
+	 	background-color: #fff3ea;
+	 }
+
+	 .navbar {
+	 	background-color: #fff3ea;
 	 }
 
 
@@ -940,8 +1103,14 @@ HERO STYLES
 
 
 
+	.hero h1,
 	.hero p {
 		max-width: 50%
+	}
+
+	.hero-image {
+		height: 200px;
+		width: 200px;
 	}
 
 
@@ -952,13 +1121,40 @@ HERO STYLES
 	-------------------
 	 ---*/
 
+	/* .abimg {
+	 	flex: 1 0 45%;
+	 }*/
+
 	 .abimg-one {
 	 	margin-top: 2rem;
+	 	margin-left: 2rem;
+
 	 }
+
+	 .abimg-two {
+	 	margin-top: 2rem;
+	 	margin-right: 2rem;
+
+	 }
+
+	 .abimg-one img {
+		top: -90px;
+  		left: 0px;
+	}
+
+
+	.amenities h2 {
+		margin-top: 0rem;
+	}
+
+	.ab-main-p {
+		margin-right: 2rem;
+	}
 
 	 .icon-flex {
 	 	padding-left: .5rem;
 	 }
+
 
 
 	/*--
@@ -975,8 +1171,12 @@ HERO STYLES
 
 
 	   .modal-content {
-		width: 50%;
+			width: 50%;
 		}
+
+		.calendar {
+			height: 500;
+		}		
 
 
 	/*--
@@ -1042,6 +1242,7 @@ HERO STYLES
 
 	 .mapouter {
 	 	flex: 1;
+	 	margin-top: 1rem;
 
 	 }
 	 
@@ -1059,6 +1260,39 @@ HERO STYLES
 
  	
  }
+
+
+ @media (min-width: 1800px) {
+
+ 		 /*--
+	-------------------
+	 LAYOUT STYLES
+	-------------------
+	 ---*/
+
+	 .body-wrapper {
+	 	padding:0px 20% 0px 20%;
+	 }
+
+ 	 /*--
+	-------------------
+	 HERO STYLES
+	-------------------
+	 ---*/
+
+	.hero p {
+		max-width: 30%;
+	}
+
+
+
+
+
+
+ }
+
+
+
 
 
 
