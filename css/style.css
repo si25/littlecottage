@@ -204,7 +204,6 @@ a:hover  {
 	cursor: pointer;
 	color:#fff;
 }
-}
 
 .hero button {
 /*	margin:1rem auto;*/
@@ -524,6 +523,18 @@ Lightbox STYLES
 
 .area-para {
 	margin-bottom: 2.5rem;
+}
+
+.area-link {
+	font-size: 1rem;
+	font-weight: 600;
+	/*color: #3F3F3F;*/
+	color: #007C92;
+}
+
+.area-link:hover {
+	cursor: pointer;
+	color: #17a2b8;
 }
 
 
